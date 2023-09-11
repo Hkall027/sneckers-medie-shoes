@@ -32,7 +32,8 @@ body {
 }
 
 #navitem a.nav-custom:hover {
-    color: rgb(91, 0, 121);
+    color: var(--primary-2100, #D51E23);
+    font-weight: 700;
 }
 
 .nav-custom::after {
@@ -40,13 +41,18 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
+    background: var(--primary-2100, #D51E23);
     transition: width .3s;
 }
 
 .nav-custom:hover::after {
     width: 100%;
     transition: width .3s;
+}
+
+.logo-medie-shoes-nav {
+    width: 60px;
+    height: 60px;
 }
 
 .button-auth-nav {
@@ -80,9 +86,10 @@ body {
 }
 
 .btn-auth-cs:hover {
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
-box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(116.71deg, #D51E23 -3.37%, #D51E23 117.19%);
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
     color: #FFFFFF;
+    font-weight: 600;
     border: none;
     
 }
@@ -100,8 +107,9 @@ padding: 21px 54px;
 gap: 10px;
     width: 250px;
 height: 61px;
-background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
 border-radius: 6px;
+background: var(--gradient-2-primary-2, linear-gradient(90deg, #D51E23 0%, rgba(10, 68, 116, 0.71) 99.99%), linear-gradient(137deg, #0C82E9 0%, #0BDFF6 103.11%));
+box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.15);
 color: white;
 border: none;
 transition: 0.5s;
@@ -115,7 +123,11 @@ width: 100px;
 
 .image-banner{
     position: absolute;
-    right: -70px;
+    right: 0px;
+    top: 85px;
+    width: 50%;
+    height: 520px;
+    /* margin-left: -80px; */
 }
 /* open css banner */
 
@@ -136,9 +148,9 @@ width: 100px;
     color: #fff;
 }
 
-.image-banner {
+/* .image-banner {
     margin-left: -80px;
-}
+} */
 
 .heading-h1-banner {
     font-family: 'Open Sans';
@@ -282,9 +294,9 @@ form.search input[type=text]{
     margin: 0px auto; 
 }
 
-.card-cs-background-green {
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
-    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+.card-cs-background-red {
+    background: var(--gradient-2-secondary, linear-gradient(137deg, rgba(213, 30, 35, 0.90) 0%, rgba(10, 68, 116, 0.90) 103.11%));
+    box-shadow: 4px 4px 25px 0px rgba(0, 0, 0, 0.10);
     border-radius: 20px;
     height: 300px;
     width: 300px;
@@ -337,7 +349,7 @@ form.search input[type=text]{
     height: 50px;
     text-align: center;
     line-height: 50px;
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
+    background: var(--primary-2100, #D51E23);
     border-radius: 50%;
     margin: 0px auto;
     margin: 125px auto;
@@ -348,7 +360,7 @@ form.search input[type=text]{
     height: 50px;
     text-align: center;
     line-height: 50px;
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
+    background: var(--primary-2100, #D51E23);
     border-radius: 50%;
     margin: 0px auto;   
     margin: 125px auto;
@@ -370,11 +382,11 @@ form.search input[type=text]{
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
-    -webkit-background-clip: text;
+    color: #D51E23;
+    /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
+    text-fill-color: transparent; */
 }
 
 .heading-about-h1 {
@@ -401,11 +413,7 @@ form.search input[type=text]{
     font-weight: 700;
     font-size: 32px;
     letter-spacing: 0.05em;
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #292929;
 }
 
 .paraf-p-count {
@@ -673,8 +681,13 @@ color: white;
 
 /* open footer */
 .footer {
-    background: linear-gradient(116.71deg, #16FF00 -3.37%, #ABF2A4 117.19%);
+    background: var(--gradient-2-secondary, linear-gradient(137deg, rgba(213, 30, 35, 0.90) 0%, rgba(10, 68, 116, 0.90) 103.11%));
     margin-top: 150px;
+}
+
+.logo-footer-medies-shoes {
+    width: 75px;
+    height: 75px;
 }
 /* close footer */
 
@@ -697,7 +710,8 @@ color: white;
 }
 
 .group-icon-medsos {
-    display: inline-flex;
+    display: flex;
+    justify-content: end;
 }
 
 
