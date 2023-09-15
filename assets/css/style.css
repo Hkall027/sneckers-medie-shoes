@@ -50,6 +50,10 @@ body {
     transition: width .3s;
 }
 
+.nav-item-cs {
+    margin-top: 3px !important;
+}
+
 .logo-medie-shoes-nav {
     width: 60px;
     height: 60px;

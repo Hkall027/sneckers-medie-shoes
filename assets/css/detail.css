@@ -41,13 +41,14 @@
 .btn-buy-order {
     width: 381px;
     height: 55px;
-    background: linear-gradient(
+    background: var(--gradient-2-primary-2, linear-gradient(90deg, #D51E23 0%, rgba(10, 68, 116, 0.71) 99.99%), linear-gradient(137deg, #0C82E9 0%, #0BDFF6 103.11%));
+    /* background: linear-gradient(
             90deg,
-            #096de7 0%,
-            #434fd7 52.07%,
-            #6d3acb 99.99%
+            #D51E23 0%,
+            #D51E23 52.07%,
+            #D51E23 99.99%
         ),
-        linear-gradient(136.68deg, #0c82e9 0%, #0bdff7 103.11%);
+        linear-gradient(136.68deg, #D51E23 0%, #D51E23 103.11%); */
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     color: #ffffff;
@@ -98,7 +99,7 @@ input::-webkit-inner-spin-button {
 }
 
 .input-group .button-plus {
-    background-color: #6d3acb;
+    background-color: #D51E23;
     border-radius: 5px;
 }
 
@@ -124,13 +125,15 @@ input::-webkit-inner-spin-button {
 }
 
 .litle-breakpoint-cs {
+    text-decoration: none;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.01em;
-    color: #6d3acb;
+    color: #D51E23;
 }
 
 .breakpoint-cs {
+    text-decoration: none;
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.01em;
@@ -349,13 +352,14 @@ input[type="number"] {
     height: 55px;
     margin-left: 25px;
     margin-top: 15px;
-    background: linear-gradient(
+    background: var(--gradient-2-primary-2, linear-gradient(90deg, #D51E23 0%, rgba(10, 68, 116, 0.71) 99.99%), linear-gradient(137deg, #0C82E9 0%, #0BDFF6 103.11%));
+    /* background: linear-gradient(
             90deg,
             #096de7 0%,
             #434fd7 52.07%,
             #6d3acb 99.99%
         ),
-        linear-gradient(136.68deg, #0c82e9 0%, #0bdff7 103.11%);
+        linear-gradient(136.68deg, #0c82e9 0%, #0bdff7 103.11%); */
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
 }
